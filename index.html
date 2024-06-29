@@ -18,6 +18,9 @@
   </head>
   <body>
     <div class="parent-container">
+      <div id="panel" onclick="event.stopPropagation()">
+        <h1>the content of the panel</h1>
+      </div>
       <!-- header section start -->
       <div class="parentofall">
         <section class="main-hero-container">
@@ -158,7 +161,9 @@
                     <!-- div.sub-menu-design-temp start -->
                     <!-- <div class="sub-menu-design-temp" id="submenuqubic"> -->
                     <div class="submenu-design-tem solution-submenu-width">
-                      <div class="submenu-item1-temp">
+                      <div
+                        class="submenu-item1-temp submenu-soplutin-break-point-26"
+                      >
                         <div class="submenu-item1-text">Personas</div>
                         <div class="submenu-content-section1">
                           <img
@@ -191,7 +196,9 @@
                           </div>
                         </div>
                       </div>
-                      <div class="submenu-item2-temp">
+                      <div
+                        class="submenu-item2-temp submenu-soplutin-break-point-26"
+                      >
                         <div class="submenu-item1-temp">
                           <div class="submenu-item1-text">Use cases</div>
                           <div class="submenu-content-section1">
@@ -356,7 +363,10 @@
             <div class="nav-right">
               <a href="#" class="btn btn-outline">Request Demo</a>
               <a href="#" class="btn btn-solid">Start Free Trial</a>
-              <i class="fa-solid fa-bars nav-right-ham-burger-menu"></i>
+              <i
+                class="fa-solid fa-bars nav-right-ham-burger-menu"
+                onclick="togglePanel()"
+              ></i>
             </div>
           </nav>
           <!-- nav end -->
@@ -378,18 +388,20 @@
                       company and contact data.</span
                     >
                   </p>
-                  <form action="">
-                    <div class="content-waper-from">
-                      <input
-                        class="main-hero-from-email-input"
-                        type="email"
-                        placeholder="Enter your work email"
-                      />
-                      <button class="main-hero-submit-btn" type="submit">
-                        Start for free
-                      </button>
-                    </div>
-                  </form>
+                  <div class="main-hero-form-lead-parent">
+                    <form action="">
+                      <div class="content-waper-from">
+                        <input
+                          class="main-hero-from-email-input"
+                          type="email"
+                          placeholder="Enter your work email"
+                        />
+                        <button class="main-hero-submit-btn" type="submit">
+                          Start for free
+                        </button>
+                      </div>
+                    </form>
+                  </div>
                 </div>
                 <div class="main-hero-image-section">
                   <div class="main-hero-main-image-container">
@@ -463,8 +475,10 @@
           </header>
           <section class="spend-m-t-features-container">
             <div class="spend-m-t-feature-group">
-              <article class="spend-m-t-feature-column">
-                <div class="spend-m-t-feature-wrapper">
+              <article class="spend-m-t-feature-column small-center">
+                <div
+                  class="spend-m-t-feature-wrapper samall-center-items-mrg-aot"
+                >
                   <img
                     loading="lazy"
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/2286520621a77247440e14df3c0262ad888fb0264d0e2d140419608880acdfdf?apiKey=c7fa9664b7ec47a1973cf06a3ad3053e&"
@@ -484,8 +498,10 @@
                   </p>
                 </div>
               </article>
-              <article class="spend-m-t-feature-column-middle">
-                <div class="spend-m-t-feature-wrapper-middle">
+              <article class="spend-m-t-feature-column-middle small-center">
+                <div
+                  class="spend-m-t-feature-wrapper-middle samall-center-items-mrg-aot"
+                >
                   <img
                     loading="lazy"
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/61267a1da5a862ea832e71f783251da66d17a8ad4ce46169ec09af7692bb96af?apiKey=c7fa9664b7ec47a1973cf06a3ad3053e&"
@@ -501,8 +517,10 @@
                   </p>
                 </div>
               </article>
-              <article class="spend-m-t-feature-column-last">
-                <div class="spend-m-t-feature-wrapper-last">
+              <article class="spend-m-t-feature-column-last small-center">
+                <div
+                  class="spend-m-t-feature-wrapper-last samall-center-items-mrg-aot"
+                >
                   <img
                     loading="lazy"
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/6f9fc3254acc89f976f464014573b963ab166af4574a11a4b2d8b374a5982bd9?apiKey=c7fa9664b7ec47a1973cf06a3ad3053e&"
@@ -760,7 +778,9 @@
               Sustainability Tech and IoT, discover and connect with decision
               makers who are your ideal customers.
             </p>
-            <a class="t-w-p-m-left-items-btn-left" href="#">Start free trial</a>
+            <a class="t-w-p-m-left-items-btn-left t-w-p-m-btn-mrg" href="#"
+              >Start free trial</a
+            >
             <a class="t-w-p-m-left-items-btn-right" href="#">Book a demo</a>
           </div>
           <div class="t-w-p-m-right-items">
@@ -815,7 +835,7 @@
           </div>
           <div class="run-s-c-l-s-content-block">
             <div class="run-s-c-l-s-content-wrapper">
-              <div class="run-s-c-l-s-flex-row">
+              <div class="run-s-c-l-s-flex-row flex-direction-reverse">
                 <aside class="run-s-c-l-s-image-column">
                   <div class="run-s-c-l-s-image-container">
                     <video
@@ -1587,6 +1607,10 @@
           </div>
           <div class="main-footer-footer-bottom">
             <div class="main-footer-footer-logo">
+              <div class="top-to-btom-res-smb">
+                <i class="fa-solid fa-arrow-up main-footer-tb-arrow"></i>
+              </div>
+
               <img
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/4790256963d629f4030ee5de7a1f58fa00b366763384d22cd31bcc0af7316de0?apiKey=c7fa9664b7ec47a1973cf06a3ad3053e&"
                 alt="Company logo"
@@ -1599,31 +1623,43 @@
                   src="https://cdn.builder.io/api/v1/image/assets/TEMP/a26eb997a115bf89c39a0df847ac7fe888f0d9de6846844ca046ffae99ee8ec9?apiKey=c7fa9664b7ec47a1973cf06a3ad3053e&"
                   alt="Facebook"
                   class="main-footer-social-icon"
+                  width="20px"
+                  height="20px"
                 />
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets/TEMP/387f31cbf51b2e104c00bec2194cb91597356d74b10d48480185e3a536976c23?apiKey=c7fa9664b7ec47a1973cf06a3ad3053e&"
                   alt="Twitter"
                   class="main-footer-social-icon"
+                  width="20px"
+                  height="20px"
                 />
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets/TEMP/d1acb8c72a28611e55d58646edebb06d0e977b848feff1924770e91e1c959412?apiKey=c7fa9664b7ec47a1973cf06a3ad3053e&"
                   alt="LinkedIn"
                   class="main-footer-social-icon"
+                  width="20px"
+                  height="20px"
                 />
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets/TEMP/23aa2436bb26ece07daa472bb88c8cf274c80639d0234474c59198dabb3dbee0?apiKey=c7fa9664b7ec47a1973cf06a3ad3053e&"
                   alt="Instagram"
                   class="main-footer-social-icon"
+                  width="20px"
+                  height="20px"
                 />
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets/TEMP/e0e791c8097b65b5a1992f2b50cb6c5ed63174c21504f0c19d6cb5f674acc944?apiKey=c7fa9664b7ec47a1973cf06a3ad3053e&"
                   alt="YouTube"
                   class="main-footer-social-icon"
+                  width="20px"
+                  height="20px"
                 />
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets/TEMP/e2ad29440be441ff565372e9a84c3723713602b9975161c59a717435d15a6a98?apiKey=c7fa9664b7ec47a1973cf06a3ad3053e&"
                   alt="WhatsApp"
                   class="main-footer-social-icon"
+                  width="20px"
+                  height="20px"
                 />
               </div>
             </div>

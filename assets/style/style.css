@@ -42,6 +42,28 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Figtree", sans-serif;
+  overflow-x: hidden;
+}
+.nav-right-ham-burger-menu {
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#panel {
+  width: 200px;
+  background-color: #333;
+  color: rgb(206, 35, 35);
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -200px;
+  transition: left 0.3s;
+  z-index: 50000;
+}
+
+.open {
+  left: 0;
 }
 /* custom fonts start */
 @font-face {
@@ -1067,7 +1089,7 @@ body {
 }
 
 .run-s-c-l-s-text-content {
-  max-width: 600px;
+  /* max-width: 600px; */
   display: flex;
   flex-direction: column;
   margin: auto 0;
@@ -1258,7 +1280,7 @@ body {
 }
 
 .the-f-d-ycf-image-container {
-  max-width: 616px;
+  /* max-width: 616px; */
   display: flex;
   flex-grow: 1;
   flex-direction: column;
@@ -1288,7 +1310,7 @@ body {
 }
 
 .the-f-d-ycf-text-container {
-  max-width: 616px;
+  /* max-width: 616px; */
   justify-content: center;
   align-items: start;
   display: flex;
@@ -1882,11 +1904,6 @@ body {
   color: var(--www-lusha-com-woodsmoke, #151417);
   padding: 0 80px 16px 0;
 }
-@media (max-width: 991px) {
-  .main-footer-footer-sections {
-    padding-right: 20px;
-  }
-}
 .main-footer-footer-section {
   display: flex;
   flex-direction: column;
@@ -1961,7 +1978,8 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 0 16px 8px;
+  padding: 0 6px 0px !important;
+  margin: auto 0px !important;
 }
 
 .main-footer-social-icons {
@@ -2158,10 +2176,9 @@ body {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   /* padding:15px; */
-  z-index: 1;
+  z-index: 10000;
   display: flex;
   width: 870px;
-  display: none !important;
 }
 
 .nav-item:hover .sub-items-div-data-os {
@@ -2408,7 +2425,7 @@ body {
   user-select: none;
   background-color: rgb(96, 13, 255);
   border: 1px solid transparent;
-  padding: 10px 20px;
+  padding: 3px 20px;
   font-size: 1rem;
   line-height: 2.25;
   border-radius: 0.25rem;
@@ -2553,6 +2570,89 @@ body {
 /* ideal cutomer section end */
 
 /* responsive start */
+@media only screen and (max-width: 230px) {
+  .navbar {
+    width: 70% !important;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .navbar {
+    width: 75% !important;
+  }
+  .spend-m-t-heading {
+    padding: 0 0px;
+  }
+  .tabs > ul > li {
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  .top-rated-sics-logo-container {
+    display: none !important;
+  }
+  .main-hero-heading {
+    font-size: 35px;
+    font-weight: 900;
+  }
+  .h-w-o-c-say-testimonials-header {
+    font-size: 25px;
+  }
+  .top-rated-sics-title {
+    padding: 0 30px;
+    font: 700 25px/115% Segoe UI, sans-serif;
+  }
+  .ideal-customer-se-t-m > h2 {
+    font-size: 32px;
+  }
+  .tabs-content-deal-c-s {
+    width: 100%;
+  }
+  .platform-left-centent-sec {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .h-w-o-c-say-testimonials-title {
+    padding: 0px 0px !important;
+  }
+  .the-f-d-ycf-headline {
+    font-size: 20px;
+  }
+  .main-footer-footer-socials {
+    padding: 0px 0px 0px;
+  }
+  .main-footer-footer-logo {
+    padding-left: 3px !important;
+    padding-right: 0px !important;
+  }
+  .top-to-btom-res-smb {
+    width: 25px !important;
+    height: 25px !important;
+    line-height: 25px !important;
+  }
+  .main-footer-footer-socials {
+    padding: 0 6px 0px !important;
+    margin: auto 0px !important;
+  }
+}
+@media only screen and (max-width: 419px) {
+  .t-w-p-m-left-items-btn-right {
+    margin: 0px 0px 15px 0px !important;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .h-w-o-c-say-testimonial-user {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-footer-social-icons {
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+  }
+}
 @media only screen and (max-width: 498px) {
   .tabs {
     width: 100% !important;
@@ -2567,11 +2667,28 @@ body {
   .tabs ul li.active {
     font-size: 15px;
   }
+  .navbar {
+    width: 82% !important;
+  }
+  .t-w-p-m-btn-mrg {
+    margin-bottom: 10px !important;
+  }
 }
 @media only screen and (max-width: 565px) {
+  .main-hero-form-lead-parent {
+    width: 100% !important;
+  }
   .content-waper-from {
     width: 100% !important;
     flex-direction: column;
+    background-color: transparent !important;
+  }
+  .main-hero-from-email-input {
+    width: 100% !important;
+  }
+  .main-hero-submit-btn {
+    width: 100% !important;
+    margin: 10px 0px 0px 0px;
   }
   .spend-m-t-feature-group {
     flex-direction: column !important;
@@ -2580,6 +2697,32 @@ body {
     margin: 0px;
   }
   .reach-i-c-w-l-info-section {
+    display: none !important;
+  }
+  .small-center {
+    margin: 0px auto !important;
+    width: 90%;
+  }
+  .samall-center-items-mrg-aot {
+    margin: 0px auto !important;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .main-footer-logo-image {
+    display: none !important;
+  }
+  .top-to-btom-res-smb {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .top-to-btom-res-smb {
     display: none !important;
   }
 }
@@ -2622,7 +2765,21 @@ body {
     display: none;
   }
   .h-w-o-c-say-testimonials-items {
-    display: none;
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .h-w-o-c-say-testimonial {
+    width: 60% !important;
+  }
+  .testimonial-m {
+    margin: 0px !important;
+  }
+  .h-w-o-c-say-testimonial-content {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
   .main-hero-text-wrapper {
     width: 100% !important;
@@ -2637,10 +2794,104 @@ body {
   .main-hero-content {
     padding: 0px 16px 80px 16px;
   }
+  .platform-left-centent-sec {
+    width: 100% !important;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .top-rated-sics-logo-row {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .top-rated-sics-logo {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 940px) {
+  .platform-content-sec {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .platform-left-centent-sec {
+    width: 100% !important;
+  }
+  .platform-right-centent-sec {
+    width: 100% !important;
+  }
+  .target-w-p-m-child {
+    flex-direction: column !important;
+  }
+  .t-w-p-m-left-items {
+    width: 100% !important;
+    text-align: center;
+  }
+  .t-w-p-m-right-items {
+    width: 100% !important;
+  }
+  .run-s-c-l-s-flex-row {
+    flex-direction: column;
+  }
+  .run-s-c-l-s-text-column {
+    width: 80% !important;
+    margin: 0 auto;
+  }
+  .run-s-c-l-s-text-content {
+    width: 100% !important;
+    text-align: center;
+  }
+  .flex-direction-reverse {
+    flex-direction: column-reverse !important;
+  }
+  .run-s-c-l-s-image-column {
+    width: 77% !important;
+    margin: 0 auto;
+  }
+  .the-f-d-ycf-main-section {
+    flex-direction: column-reverse !important;
+  }
+  .the-f-d-ycf-right-column {
+    width: 96% !important;
+  }
+  .the-f-d-ycf-content-wrapper {
+    width: 100% !important;
+    text-align: center;
+  }
+  .the-f-d-ycf-left-column {
+    width: 90% !important;
+    margin: 0 auto;
+  }
 }
 @media only screen and (min-width: 1026px) {
   .nav-right-ham-burger-menu {
     display: none !important;
+  }
+  .sub-items-div-data-os {
+    width: 728px;
+  }
+  .submenu-design-tem {
+    width: 728px;
+  }
+  .submenu-content-section1 {
+    display: flex !important;
+    align-items: flex-start !important;
+  }
+  .solution-submenu-width-d-o {
+    width: 625px !important;
+  }
+  .solution-submenu-width {
+    width: 98% !important;
+  }
+  .submenu-soplutin-break-point-26 {
+    width: 43% !important;
+  }
+  .submenucontenttexs1 > div {
+    font-size: 12px !important;
   }
 }
 @media only screen and (max-width: 1025px) {

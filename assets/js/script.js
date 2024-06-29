@@ -35,3 +35,16 @@ document.addEventListener("DOMContentLoaded", function () {
     setActiveTab(tabs[0]);
   });
 // ideals section end
+// panel script start
+function togglePanel() {
+  var panel = document.getElementById("panel");
+  panel.classList.toggle("open");
+}
+
+document.addEventListener("click", function(event) {
+  var panel = document.getElementById("panel");
+  if (!panel.contains(event.target) && panel.classList.contains("open")) {
+      panel.classList.remove("open");
+  }
+});
+// panel script end
