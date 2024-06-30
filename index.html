@@ -17,15 +17,214 @@
     />
   </head>
   <body>
-    <div class="parent-container">
-      <div id="panel" onclick="event.stopPropagation()">
-        <h1>the content of the panel</h1>
+    <div class="side-panel" id="sidePanel">
+      <!-- sidepanel why adopt  start -->
+      <div
+        class="whyadopt-sidepanel sidepanel-parent-p"
+        onclick="toggleSubItem()"
+      >
+        <p>Why Adapt?</p>
+        <i class="fa-solid fa-angle-down"></i>
       </div>
+      <div class="whyadopt-sub-sidepanel" id="subPanel">
+        <!-- <div class="subpanel-child-sub-c"> -->
+        <!-- subpanel items section start -->
+        <div
+          class="subpanel-subitem-contents"
+          onclick="toggleSubItemSubChild()"
+        >
+          <p>Platform</p>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="sub-panel-item-child-items-parent" id="subPanelChild">
+          <div class="sub-panel-item-child-items">
+            <a class="sub-panel-item-child-items-a" href="#">Prospecting</a>
+            <a class="sub-panel-item-child-items-a" href="#">Adapt API</a>
+            <a class="sub-panel-item-child-items-a" href="#">Enrichment</a>
+          </div>
+        </div>
+        <!-- subpanel items section 2nd start -->
+        <div
+          class="subpanel-subitem-contents"
+          onclick="toggleSubItemSubChildPlatform()"
+        >
+          <p>Useful Links</p>
+          <i class="fa-solid fa-angle-down subitem-arrow-rotate-use"></i>
+        </div>
+        <div
+          class="sub-panel-item-child-items-parent"
+          id="subPanelChildPlatform"
+        >
+          <div class="sub-panel-item-child-items">
+            <a class="sub-panel-item-child-items-a" href="#">Prospecting</a>
+            <a class="sub-panel-item-child-items-a" href="#">Adapt API</a>
+            <a class="sub-panel-item-child-items-a" href="#">Enrichment</a>
+          </div>
+        </div>
+        <!-- subpanel items section 2nd end -->
+        <!-- subpanel items section 3rd start -->
+        <div
+          class="subpanel-subitem-contents"
+          onclick="toggleSubItemSubChildAdopt()"
+        >
+          <p>Adapt vs</p>
+          <i class="fa-solid fa-angle-down adopt-sub-child-rotate"></i>
+        </div>
+        <div
+          class="sub-panel-item-child-items-parent"
+          id="subPanelChildPlatformAdopt"
+        >
+          <div class="sub-panel-item-child-items">
+            <a class="sub-panel-item-child-items-a" href="#">Prospecting</a>
+            <a class="sub-panel-item-child-items-a" href="#">Adapt API</a>
+            <a class="sub-panel-item-child-items-a" href="#">Enrichment</a>
+          </div>
+        </div>
+        <!-- subpanel items section 3rd end -->
+
+        <!-- subpanel items section end -->
+
+        <!-- </div> -->
+      </div>
+      <!-- sidepanel why adopt end -->
+      <!-- subpanel items section data-os start -->
+      <div
+        class="data-os-subpanel-item whyadopt-sidepanel subitem-panel-atribute-layout"
+      >
+        <a href="#" class="">Data OS</a>
+      </div>
+
+      <!-- subpanel items section data-os end -->
+      <!-- sidepanel Solutions start -->
+      <div
+        class="whyadopt-sidepanel sidepanel-parent-p"
+        onclick="toggleSolution()"
+      >
+        <p>Solutions</p>
+        <i class="fa-solid fa-angle-down sidepanel-solution-arrow"></i>
+      </div>
+      <div class="whyadopt-sub-sidepanel" id="subPanelSolution">
+        <!-- <div class="subpanel-child-sub-c"> -->
+        <!-- subpanel items section start -->
+        <div
+          class="subpanel-subitem-contents"
+          onclick="toggleSubItemSubChildPersonas()"
+        >
+          <p>Personas</p>
+          <i
+            class="fa-solid fa-angle-down subitem-arrow-rotate-use-personas"
+          ></i>
+        </div>
+        <div
+          class="sub-panel-item-child-items-parent"
+          id="subPanelChildPersonasItems"
+        >
+          <div class="sub-panel-item-child-items">
+            <a class="sub-panel-item-child-items-a" href="#">Sales</a>
+            <a class="sub-panel-item-child-items-a" href="#">Marketing</a>
+          </div>
+        </div>
+        <!-- subpanel items section 2nd start -->
+        <div
+          class="subpanel-subitem-contents"
+          onclick="toggleSubItemSubChildUseCases()"
+        >
+          <p>Use cases</p>
+          <i
+            class="fa-solid fa-angle-down subitem-arrow-rotate-use-usecases"
+          ></i>
+        </div>
+        <div
+          class="sub-panel-item-child-items-parent"
+          id="subPanelChildUsecasesItems"
+        >
+          <div class="sub-panel-item-child-items">
+            <a class="sub-panel-item-child-items-a" href="#">Email Finder</a>
+            <a class="sub-panel-item-child-items-a" href="#"
+              >LinkedIn Email Finder</a
+            >
+            <a class="sub-panel-item-child-items-a" href="#"
+              >Hyper-Personalization</a
+            >
+            <a class="sub-panel-item-child-items-a" href="#"
+              >Lead Scoring & Routing</a
+            >
+          </div>
+        </div>
+        <!-- subpanel items section 2nd end -->
+        <!-- subpanel items section end -->
+
+        <!-- </div> -->
+      </div>
+      <!-- sidepanel why adopt end -->
+      <!-- sidepanel Solutions end -->
+      <!-- subpanel items section price start -->
+      <div
+        class="data-os-subpanel-item whyadopt-sidepanel subitem-panel-atribute-layout"
+      >
+        <a href="#" class="">Price</a>
+      </div>
+
+      <!-- subpanel items section price end -->
+      <!-- panel-resources section start -->
+      <div
+        class="whyadopt-sidepanel sidepanel-parent-p"
+        onclick="toggleSubItemSubChildResources()"
+      >
+        <p>Resources</p>
+        <i
+          class="fa-solid fa-angle-down subitem-arrow-rotate-use-resources"
+        ></i>
+      </div>
+      <div
+        class="whyadopt-sub-sidepanel"
+        id="toggleSubItemSubChildResourcesSubItem"
+      >
+        <!-- <div class="subpanel-child-sub-c"> -->
+        <!-- subpanel items section start -->
+        <div class="sub-panel-item-child-items">
+          <a class="sub-panel-item-child-items-a" href="#">Blogs</a>
+          <a class="sub-panel-item-child-items-a" href="#"
+            >Build Your Marketing Stack</a
+          >
+          <a class="sub-panel-item-child-items-a" href="#">Case Studies</a>
+          <a class="sub-panel-item-child-items-a" href="#">About Us</a>
+        </div>
+
+        <!-- subpanel items section end -->
+
+        <!-- </div> -->
+      </div>
+      <!-- panel-resources section end -->
+      <!-- sidepanel Sign In section start -->
+      <div
+        class="data-os-subpanel-item whyadopt-sidepanel subitem-panel-atribute-layout"
+      >
+        <a href="#" class="">Sign In</a>
+      </div>
+      <!-- sidepanel Sign In section end -->
+      <!-- sidepanel Request Demo section start -->
+      <div
+        class="data-os-subpanel-item whyadopt-sidepanel subitem-panel-atribute-layout"
+      >
+        <a href="#" class="">Request Demo</a>
+      </div>
+      <!-- sidepanel Request Demo section end -->
+      <!-- sidepanel Start Free Trial section start -->
+      <div
+        class="data-os-subpanel-item whyadopt-sidepanel subitem-panel-atribute-layout"
+      >
+        <a href="#" class="">Start Free Trial</a>
+      </div>
+      <!-- sidepanel Start Free Trial section end -->
+    </div>
+    <!-- sidepanel end -->
+    <div class="parent-container" id="idparentcontainer">
       <!-- header section start -->
       <div class="parentofall">
         <section class="main-hero-container">
           <!-- nav -->
-          <nav class="navbar">
+          <nav class="navbar" id="navbar-controller">
             <div class="nav-left">
               <div class="logo-container">
                 <img
@@ -365,7 +564,7 @@
               <a href="#" class="btn btn-solid">Start Free Trial</a>
               <i
                 class="fa-solid fa-bars nav-right-ham-burger-menu"
-                onclick="togglePanel()"
+                onclick="toggleMenu()"
               ></i>
             </div>
           </nav>
