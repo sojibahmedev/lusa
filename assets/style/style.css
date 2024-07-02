@@ -2048,6 +2048,11 @@ body {
 .main-footer-section-item-text {
   font-family: Segoe UI, sans-serif;
   justify-content: center;
+  text-decoration: none;
+  color: var(--www-lusha-com-woodsmoke, #151417);
+}
+.main-footer-section-item-text:hover {
+  text-decoration: underline;
 }
 
 .main-footer-footer-bottom {
